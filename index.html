@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:opsz,wght@8..144,400;8..144,600;8..144,800&display=swap" rel="stylesheet">
+    <title>D&D Hub</title>
+</head>
+<body>
+   <header>
+        <nav class="fixed-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><i class="material-icons" id="desktop-menu-icon">menu</i></li>
+            </ul>
+            </nav>
+            <div id="desktop-menuContent" class="desktop-hidden">
+                <ul id="desktop-menu-list">
+                    <li><a href="playerinfo.html">Player Info</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="cities.html">NPC & Cities</a></li>
+                </ul>
+            </div>
+            <!--<ul id="menu-list" style="display: none;">
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul> -->
+        </nav>
+        <nav class="nav-mobile">
+            <!--<a href="#"><img src="images\mountain logo-02.png" alt="Logo"></a> -->
+            <h1>D&D Hub</h1>
+            <div id="icon-container">
+            <i class="material-icons" id="menuIcon">menu</i>
+            </div>
+        </nav>
+        <div id="menuContent" class="hidden">
+            <ul id="menu-list-mobile">
+                <li><a href="playerinfo.html">Player Info</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="npc.html">NPC List</a></li>
+                    <li><a href="cities.html">Cities</a></li>
+                <!--<li><a href="contact.html">Classes</a></li>
+                <li><a href="contact.html">Blog</a></li>-->
+            </ul>
+            <ul id="menu-list-mobile-account-options">
+                <li><a href="gallery.html">Login</a></li>
+                <li><a href="about.html">Account</a></li>
+            </ul>
+        </div>
+   </header>
+   <main>
+        <section class="banner" style="display: none;">
+            <div class="overlay">
+                <h1>Start Your Journey Now!</h1>
+            </div>
+            <button class="hero-action-button">
+                <h2>Browse Gallery</h2>
+            </button>
+        </section>
+
+        <section class="banner-mobile" style="display: none;">
+            <button class="hero-action-button">
+                <h2>Browse Gallery</h2>
+            </button>
+        </section>
+
+        <section class="group-info">
+            <h1>Dudes &<br>Damsels</h1>
+            <!--<p>Date</p>-->
+        </section>
+
+        <section class="main-objectives">
+            <h3>Main Objectives</h3>
+            <p>Ah, how shall I do it? Oh, I know. I'll turn him (Hunter) into a flea, a harmless, little flea, and then I'll put that flea in a box, 
+                and then I'll put that box inside of another box, and then I'll mail that box to myself, and when it arrives... 
+                [laughs] I'll smash it with a hammer! It's brilliant, brilliant, brilliant, I tell you! Genius, I say!</p>
+        </section>
+
+
+        <section class="featured-links">
+                <div class="box-container">
+                    <div class="box 1">Notes</div>
+                    <div class="box 2">NPC List</div>
+                    <div class="box 3">City Info</div>
+            </div>
+        </section>
+        <section class="featured-links" id="links-2">
+            <div class="box-container">
+                <div class="box 4" id="box-color">Player Info</div>
+                <div class="box 5" id="box-color">Inventory</div>
+        </div>
+    </section>
+
+        <section class="about-brief" id="about-brief-id">
+            <img class="profile-picture" src="images\profile placeholder-03.png">
+            <p>Hello! I'm Alex, a passionate graphic designer and nature enthusiast based in San Francisco. 
+                With over five years of professional experience, I specialize in creating visually stunning 
+                designs that tell compelling stories. I believe in continuous 
+                learning and am always eager to expand my skills, whether through professional courses or 
+                hands-on projects. Let's connect and create something amazing together!</p>
+                <a href="your-page.html" class="button-class"><b>Contact</b></a>
+        </section>
+
+
+
+        <section class ="featured-products">
+            <div class="product-containers">
+                <div class="product-box 1">Product 1</div>
+                <div class="product-box 2">Product 2</div>
+                <div class="product-box 3">Product 3</div>
+            </div>
+        </section>
+
+        <section class="grid-container">
+            <div class="grid-title"><a href="store.html"><h2>Shop Merch</h2></a></div>
+            <div class="grid-item" id="grid-1">Item 1</div>
+            <div class="grid-item" id="grid-2">Item 2</div>
+            <div class="grid-item large" id="grid-3">Item 3</div>
+        </section>
+        <section class="testimonials">
+            <h2>Hear from our Customers</h2>
+            <div class="testimonial-container">
+            <img src="images\profile placeholder-03.png" alt="profile picture">
+            <h3>Name</h3>
+            <p>Hello! I'm Alex, a passionate graphic designer and nature enthusiast based in San Francisco. 
+                With over five years of professional experience, I specialize in creating visually stunning 
+                designs that tell compelling stories. I believe in continuous 
+                learning and am always eager to expand my skills, whether through professional courses or 
+                hands-on projects. Let's connect and create something amazing together!</p>
+            </div>
+            <div class="testimonial-container">
+                <img src="images\profile placeholder-03.png" alt="profile picture">
+                <h3>Name</h3>
+                <p>Hello! I'm Alex, a passionate graphic designer and nature enthusiast based in San Francisco. 
+                    With over five years of professional experience, I specialize in creating visually stunning 
+                    designs that tell compelling stories. I believe in continuous 
+                    learning and am always eager to expand my skills, whether through professional courses or 
+                    hands-on projects. Let's connect and create something amazing together!</p>
+                </div>
+            <div class="testimonial-container">
+                <img src="images\profile placeholder-03.png" alt="profile picture">
+                <h3>Name</h3>
+                <p>Hello! I'm Alex, a passionate graphic designer and nature enthusiast based in San Francisco. 
+                    With over five years of professional experience, I specialize in creating visually stunning 
+                    designs that tell compelling stories. I believe in continuous 
+                    learning and am always eager to expand my skills, whether through professional courses or 
+                    hands-on projects. Let's connect and create something amazing together!</p>
+                </div>
+        </section>
+        </main>
+   </main>
+   <footer>
+        <section class="footer-container">
+        <div class="footer-box" id="contact">
+            <h4>Contact Info</h4>
+            <p>(xxx) xxx-xxxx</p>
+            <p>12345 joe smith lane</p>
+            <p>xxxx@gmail.com</p>
+        </div>
+        <div class="footer-box">
+            <h4>Privacy Policy</h4>
+            <h4>Terms of Service</h4>
+            <h4>Social Media</h4>
+        </div>
+        </section>
+        <div class="copyright"><p>© 2024 [Your Name or Your Company's Name]. All rights reserved.</p></div>
+   </footer> 
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
