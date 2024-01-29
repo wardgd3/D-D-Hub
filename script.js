@@ -66,6 +66,7 @@ $(document).ready(function() {
 
     //Dice App
     $('.dice-result-button').click(function() {
+        event.preventDefault();
         let diceType = $('#dice-select').val();
         let numberOfDice = parseInt($('#dice-number').val());
         let total = 0;
@@ -77,8 +78,11 @@ $(document).ready(function() {
             individualResults.push(roll);
         }
     
-        $('#totalResult').text(total);
-        $('#individualRolls').text(individualResults.join(', '));
+        $('#totalResult').addClass('bounce').text(total);
+    $('#individualRolls').text(individualResults.join(', '));
+    $('#totalResult, #individualRolls').on('animationend', function() {
+        $(this).removeClass('bounce');
+    });
     });
     
     function rollDice(diceType) {
@@ -95,5 +99,4 @@ $(document).ready(function() {
         default: return 0;
         }
     }
-    
 });
