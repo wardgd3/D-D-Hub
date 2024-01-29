@@ -15,7 +15,7 @@ a {
     color: white;
 }
 
-h1, h2, h3, h4{
+h1, h2, h3{
     font-family: 'Roboto Serif', serif;
 }
 
@@ -214,7 +214,7 @@ p{
             z-index: 1000;
             transition: right 0.5s ease;
             cursor: pointer;
-            background-color: rgb(107, 107, 107);
+            background-color: rgb(209, 52, 24);
             /* Initialize with hidden state */
         }
         .hidden {
@@ -416,7 +416,7 @@ p{
 .box {
     height: 60px;
     width: 100%;
-    background-color: rgb(160, 12, 12);
+    background-color: rgb(170, 39, 39);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -472,7 +472,7 @@ p{
 @media (max-width: 550px) {
     .dice-app {
         color: white;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
         padding-top: 20px;
     }
     .dice-app h1{
@@ -490,7 +490,7 @@ p{
         border-radius: 30px;
         border: none;
         width: 120px;
-        background-color: rgb(226, 90, 11);
+        background-color: rgb(211, 39, 39);
         color: white;
         font-size: 24px;
         height: 50px;
@@ -518,14 +518,20 @@ p{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 140px; /* Adjust as needed */
+        min-height: 140px; /* Adjust as needed */
         overflow-y: hidden;
-        margin-top: 25px;
+        margin-top: 10px;
         padding-bottom: 10px;
     }
-    .dice-print-result h3 {
+    .dice-print-result h4 {
         margin: 15px 0; /* Provides consistent spacing */
-        font-size: 24px;
+        font-size: 16px;
+        font-family: 'Roboto' sans-serif;
+        font-weight: 300;
+    }
+   
+    #totalResult{
+        font-size: 60px;
     }
 }
 
