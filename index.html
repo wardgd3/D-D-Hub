@@ -102,14 +102,36 @@
         </div>
     </section>
 
-        <section class="about-brief" id="about-brief-id">
-            <img class="profile-picture" src="images\profile placeholder-03.png">
-            <p>Hello! I'm Alex, a passionate graphic designer and nature enthusiast based in San Francisco. 
-                With over five years of professional experience, I specialize in creating visually stunning 
-                designs that tell compelling stories. I believe in continuous 
-                learning and am always eager to expand my skills, whether through professional courses or 
-                hands-on projects. Let's connect and create something amazing together!</p>
-                <a href="your-page.html" class="button-class"><b>Contact</b></a>
+        <!--<section class="dice-app" id="dice-app-id">
+            <h1>Roll Dice</h1>
+            <div class="dice-container">
+                <h2>D20</h2>
+                <button class="dice-result-button"><b>Roll</b></a></button>
+                <h2 class="dice-print-result"></h2>
+            </div>
+        </section>-->
+            <section class="dice-app" id="dice-app-id">
+            <h1>Roll Dice</h1>
+            <form id="form-dice">
+                <select id="dice-select" name="dice-select">
+                    <option value="d20">D20</option>
+                    <option value="d12">D12</option>
+                    <option value="d10">D10</option>
+                    <option value="d8">D8</option>
+                    <option value="d6">D6</option>
+                    <option value="d4">D4</option>
+                    <option value="d-percent">Percentile</option>
+                </select>
+                <label for="dice-number"><b>Dice #</b></label>
+                <input id="dice-number" type="number" value="1" min="1" max="10">
+            </form>
+
+            <button class="dice-result-button"><b>Roll</b></a></button>
+
+                <div class="dice-print-result">
+                    <h3>Result<br> <span id="totalResult"></span></h3>
+                    <h3>Rolls<br> <span id="individualRolls"></span></h3>
+                </div>
         </section>
 
 

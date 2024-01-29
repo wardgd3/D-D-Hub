@@ -63,4 +63,37 @@ $(document).ready(function() {
 
     // Initialize icon color and position based on initial scroll position
     updateIconAppearanceBasedOnScroll();
+
+    //Dice App
+    $('.dice-result-button').click(function() {
+        let diceType = $('#dice-select').val();
+        let numberOfDice = parseInt($('#dice-number').val());
+        let total = 0;
+        let individualResults = [];
+    
+        for (let i = 0; i < numberOfDice; i++) {
+            let roll = rollDice(diceType);
+            total += roll;
+            individualResults.push(roll);
+        }
+    
+        $('#totalResult').text(total);
+        $('#individualRolls').text(individualResults.join(', '));
+    });
+    
+    function rollDice(diceType) {
+        switch(diceType) {
+            case 'd20': return Math.floor(Math.random() * 20) + 1;
+        case 'd12': return Math.floor(Math.random() * 12) + 1;
+        case 'd10': return Math.floor(Math.random() * 10) + 1;
+        case 'd8': return Math.floor(Math.random() * 8) + 1;
+        case 'd6': return Math.floor(Math.random() * 6) + 1;
+        case 'd4': return Math.floor(Math.random() * 4) + 1;
+        case 'd-percent': 
+            // Roll two ten-sided dice - one for tens and one for units
+            return (Math.floor(Math.random() * 10) * 10) + Math.floor(Math.random() * 10);
+        default: return 0;
+        }
+    }
+    
 });
