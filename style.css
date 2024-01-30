@@ -351,10 +351,12 @@ p{
 }*/
 }
 /* Group info ---------------------------------------------------------------------------------------------------------------------*/
-
-.group-info{
-    margin: 140px 60px 0px;
+.main-h1-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
 }
+
 .group-info p{
     text-align: center;
 }
