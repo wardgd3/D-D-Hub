@@ -65,8 +65,7 @@ $(document).ready(function() {
     updateIconAppearanceBasedOnScroll();
 
     //Dice App
-    $('.dice-result-button').click(function() {
-        event.preventDefault();
+    $('.dice-result-button').click(function(event) {
         let diceType = $('#dice-select').val();
         let numberOfDice = parseInt($('#dice-number').val());
         let total = 0;
@@ -78,7 +77,8 @@ $(document).ready(function() {
             individualResults.push(roll);
         }
     
-        $('#totalResult').addClass('bounce').text(total);
+        $('#totalResult').text(total);
+        $('#totalResult').addClass('bounce')
     $('#individualRolls').text(individualResults.join(', '));
     $('#totalResult, #individualRolls').on('animationend', function() {
         $(this).removeClass('bounce');

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,600;8..144,800&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,800&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <title>D&D Hub</title>
 </head>
 <body>
@@ -51,6 +51,7 @@
                     <li><a href="notes.html">Notes</a></li>
                     <li><a href="npc.html">NPC List</a></li>
                     <li><a href="cities.html">Cities</a></li>
+                    <li><a href="dice.html">Roll Dice</a></li>
                 <!--<li><a href="contact.html">Classes</a></li>
                 <li><a href="contact.html">Blog</a></li>-->
             </ul>
@@ -78,30 +79,31 @@
 
         <section class="group-info">
             <h1>Dudes &<br>Damsels</h1>
+            <p>Campaign Resources</p>
             <!--<p>Date</p>-->
         </section>
 
         <section class="main-objectives">
-            <h3>Main Objectives</h3>
-            <p>Ah, how shall I do it? Oh, I know. I'll turn him (Hunter) into a flea, a harmless, little flea, and then I'll put that flea in a box, 
-                and then I'll put that box inside of another box, and then I'll mail that box to myself, and when it arrives... 
-                [laughs] I'll smash it with a hammer! It's brilliant, brilliant, brilliant, I tell you! Genius, I say!</p>
+            <!-- <p>Ah, how shall I do it? Oh, I know. I'll turn him (Hunter) into a flea, a harmless, little flea, and then I'll put that flea in a box, 
+                and then I'll put that box inside of another box, and then I'll mail that box to myself, and when it arrives... </p>-->
         </section>
-
-
         <section class="featured-links">
-                <div class="box-container">
-                    <div class="box 1">Notes</div>
-                    <div class="box 2">NPC List</div>
-                    <div class="box 3">City Info</div>
+            <!--<h3 id="h3-resources">Player Resources</h3>-->
+            <div class="resources-box-container" id="player-resources-container">
+                <div class="box-resources">
+                    <img id="glossary-icons" src="images\web icon white-new-04.png">
+                    <h3 id="resources-text-h3">Glossary</h3>
+                </div> <!--Notes, NPC, Cities, Player Info-->
+                <div class="box-resources" id="box-player-info">
+                    <img id="glossary-icons" src="images\web icon white-new-05.png">
+                    <h3 id="resources-text-h3">Inventory</h3>
+                </div>
+                <div class="box-resources" id="dice">
+                    <img id="glossary-icons" src="images\web icon white-new-06.png">
+                    <h3 id="resources-text-h3">Roll Dice</h3>
+                </div>
             </div>
         </section>
-        <section class="featured-links" id="links-2">
-            <div class="box-container">
-                <div class="box 4" id="box-color">Player Info</div>
-                <div class="box 5" id="box-color">Inventory</div>
-        </div>
-    </section>
 
         <!--<section class="dice-app" id="dice-app-id">
             <h1>Roll Dice</h1>
@@ -115,6 +117,7 @@
             <h1>Roll Dice</h1>
             <form id="form-dice">
                 <select id="dice-select" name="dice-select">
+                    <option value="" disabled selected>Select Dice</option>
                     <option value="d20">D20</option>
                     <option value="d12">D12</option>
                     <option value="d10">D10</option>
@@ -137,21 +140,21 @@
         </section>
 
 
-
+        <!--
         <section class ="featured-products">
             <div class="product-containers">
                 <div class="product-box 1">Product 1</div>
                 <div class="product-box 2">Product 2</div>
                 <div class="product-box 3">Product 3</div>
             </div>
-        </section>
-
+        </section> -->
         <section class="grid-container">
-            <div class="grid-title"><a href="store.html"><h2>Shop Merch</h2></a></div>
+            <div class="grid-title"><a href="store.html"><h2>Grid Box</h2></a></div>
             <div class="grid-item" id="grid-1">Item 1</div>
             <div class="grid-item" id="grid-2">Item 2</div>
             <div class="grid-item large" id="grid-3">Item 3</div>
         </section>
+        <!--
         <section class="testimonials">
             <h2>Hear from our Customers</h2>
             <div class="testimonial-container">
@@ -182,7 +185,7 @@
                     hands-on projects. Let's connect and create something amazing together!</p>
                 </div>
         </section>
-        </main>
+    -->
    </main>
    <footer>
         <section class="footer-container">

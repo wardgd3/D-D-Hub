@@ -41,7 +41,7 @@ p{
     width: 100%;
     background-color: rgb(37, 37, 37);
     z-index: 1001;
-    height: 70px;
+    height: 60px;
     display: flex;
     justify-content: center;
 }
@@ -49,6 +49,7 @@ p{
 .fixed-nav ul {
     list-style-type: none;
     display: flex;
+    align-items: center;
     margin: 0;
     padding: 0;
     justify-content: space-around;
@@ -143,7 +144,7 @@ p{
             margin: 0;
             padding: 0;
             top: 0;
-            height: 60px;
+            height: 50px;
             padding: 3px 4px 3px;
             font-family: 'Roboto Serif', serif;
         }
@@ -168,6 +169,7 @@ p{
             transition: color 0.3s ease, top 0.3s ease;
             position: relative;
             top: 20px;
+            font-size: 18px;
         }
         #icon-container{
             display: flex;
@@ -351,15 +353,19 @@ p{
 /* Group info ---------------------------------------------------------------------------------------------------------------------*/
 
 .group-info{
-    margin: 150px 30px 0px;
+    margin: 140px 60px 0px;
+}
+.group-info p{
+    text-align: center;
 }
 .group-info h1{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 58px;
+    line-height: 52px;
     font-family: 'Roboto Serif', serif;
     font-weight: 800;
+    width: auto;
 }
 /* main onjectives ---------------------------------------------------------------------------------------------------------------------*/
 .main-objectives{
@@ -369,7 +375,7 @@ p{
 /* Featured Links ---------------------------------------------------------------------------------------------------------------------*/
 
 .featured-links{
-    margin: 75px 0px 75px;
+    margin: 95px 0px 75px;
 }
 
 .box-container {
@@ -396,7 +402,7 @@ p{
 .featured-links {
     height: auto; /* This overrides the height from .featured */
     margin-bottom: 10px;
-    margin-top: 70px; /* This overrides the margin-top from .featured-links */
+    margin-top: 52px; /* This overrides the margin-top from .featured-links */
     padding-bottom: 15px;
     display: block;
     justify-content: center;
@@ -406,12 +412,31 @@ p{
     font-weight: 600;
 }
 
-#links-2{
-    margin-top: 20px;
+#h3-resources{
+    text-align: left;
+    color: white;
+    position: relative;
+}
+
+#resources-text-h3{
+    position: relative;
+    left: 55px;
+    text-align: left;
+    width: 180px;
+    letter-spacing: 0.6px;
+    font-size: 25px;
+}
+
+#glossary-icons{
+    width: 42.5px;
+    height: auto;
+    margin-left: -160px;
+    position: absolute;
+
 }
 
 
-.box-container {
+.resources-box-container {
     display: flex;
     margin: 0px 30px 0px;
     padding: 0;
@@ -420,9 +445,9 @@ p{
     align-items: center;
     flex-direction: column;
 }
-.box {
+.box-resources {
     height: 60px;
-    width: 100%;
+    width: 80%;
     background-color: rgb(170, 39, 39);
     display: flex;
     align-items: center;
@@ -431,9 +456,13 @@ p{
     margin-bottom: 20px;
     font-size: 24px;
     border-radius: 10px;
+    text-align: left;
 }
-#box-color {
+#box-player-info {
     background-color: rgb(189, 126, 11);
+}
+#dice{
+    background-color: rgb(49, 49, 224);
 }
 }
 
@@ -472,13 +501,26 @@ p{
     height: 40px;
     padding: 5px;
     margin-right: 30px;
-    width: 100px;
+    width: 120px;
 }
 #form-dice input{
     font-size: 18px;
     height: 28px;
     padding: 5px;
     width: 60px;
+}
+.dice-result-button {
+    border-radius: 30px;
+    border: none;
+    width: 120px;
+    background-color: rgb(228, 66, 16);
+    color: white;
+    font-size: 24px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'Roboto Serif', serif;
+    letter-spacing: 2.5px;
 }
 
 @media (max-width: 550px) {
@@ -488,7 +530,7 @@ p{
         40% {transform: translateY(-30px);}
         60% {transform: translateY(-15px);}
     }
-    .bounce {
+    #bounce {
         animation: bounce 1s ease;
     }
 
@@ -508,17 +550,6 @@ p{
         padding-bottom: 10px;
     }
 
-    .dice-result-button {
-        border-radius: 30px;
-        border: none;
-        width: 120px;
-        background-color: rgb(228, 66, 16);
-        color: white;
-        font-size: 24px;
-        height: 50px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
     #form-dice{
         font-size: 18px;
         margin: 30px 0px 30px;
@@ -528,13 +559,14 @@ p{
         height: 40px;
         padding: 5px;
         margin-right: 30px;
-        width: 120px;
+        width: 140px;
     }
     #form-dice input{
         font-size: 18px;
         height: 28px;
         padding: 5px;
-        width: 60px;
+        width: 30px;
+        text-align: center;
     }
     .dice-print-result {
         display: flex;
