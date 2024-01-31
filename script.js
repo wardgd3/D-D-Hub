@@ -2,7 +2,7 @@ $(document).ready(function() {
     // Function to update the color and position based on scroll position
     function updateIconAppearanceBasedOnScroll() {
         var offset = $(window).scrollTop();
-        var colorBasedOnScroll = offset < 100 ? 'black' : 'white'; // Black when at the top
+        var colorBasedOnScroll = offset < 100 ? '#8B2721' : '#F4E9D3'; // Black when at the top
 
         // Calculate top position based on scroll offset continuously
         var topPosition = Math.max(20 - offset, 0) + 'px';
@@ -45,7 +45,7 @@ $(document).ready(function() {
         var fadeUntil = 100;
         var opacity = offset <= fadeUntil ? 0 + offset / fadeUntil : 1;
 
-        $('.nav-mobile').css('background-color', 'rgba(37, 37, 37, ' + opacity + ')');
+        $('.nav-mobile').css('background-color', 'rgba(29, 51, 29, ' + opacity + ')');
         updateIconAppearanceBasedOnScroll();
         //$('.nav-mobile h1, .nav-mobile img').css('opacity', opacity);
     });
