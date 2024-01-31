@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dice_style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Lora&family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,800&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <nav class="nav-mobile">
+        <!--<a href="#"><img src="images\mountain logo-02.png" alt="Logo"></a> -->
+        <h1 id="nav-icon-dice">D&D HUB</h1>
+        <div id="icon-container">
+        <i class="material-icons" id="menuIcon-dice">menu</i>
+        </div>
+    </nav>
+    <div id="menuContent-dice" class="hidden">
+        <h4>Player<br>Resources</h4>
+        <ul id="menu-list-mobile">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="notes.html">Glossary</a></li>
+                <li><a href="dice.html">Roll Dice</a></li>
+            <!--<li><a href="contact.html">Classes</a></li>
+            <li><a href="contact.html">Blog</a></li>-->
+        </ul>
+        <ul id="menu-list-mobile-account-options">
+            <li><a href="gallery.html">Login</a></li>
+            <li><a href="about.html">Account</a></li>
+        </ul>
+    </div>
+    </header>
+    <section class="dice-app" id="dice-app-id">
+        <h1>Roll Dice</h1>
+        <form id="form-dice">
+            <select id="dice-select" name="dice-select">
+                <option value="" disabled selected>Select Dice</option>
+                <option value="d20">D20</option>
+                <option value="d12">D12</option>
+                <option value="d10">D10</option>
+                <option value="d8">D8</option>
+                <option value="d6">D6</option>
+                <option value="d4">D4</option>
+                <option value="d-percent">Percentile</option>
+            </select>
+            <label for="dice-number"><b>Dice #</b></label>
+            <input id="dice-number" type="number" value="1" min="1" max="10">
+
+        </form>
+
+        <button class="dice-result-button"><b>Roll</b></a></button>
+
+            <div class="dice-print-result">
+                <h3>You Rolled<br> <span id="totalResult"></span></h3>
+                <h4>Individual Rolls<br> <span id="individualRolls"></span></h4>
+            </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

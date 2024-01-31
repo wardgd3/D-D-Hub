@@ -163,8 +163,8 @@ p{
         #desktop-menuContent{
             display: none;
         }
-        #nav-home{
-            color: #8B2721;
+        #nav-icon-dice{
+            color: #F4E9D3;
             margin: 0px 30px 0px;
             width: 300px;
             white-space: nowrap;
@@ -195,10 +195,11 @@ p{
             z-index: 5000;
             transition: color 0.3s ease;
           }
-          #menuIcon{
+          #menuIcon-dice{
             font-size: 32px;
-            transition: font-size 0.3s ease, top 0.3s ease;
             position: relative; /* Needed for 'top' to work */
+            top: 20px;
+            color: #F4E9D3;
             top: 20px;
           }
         
@@ -209,7 +210,7 @@ p{
             z-index: 1000;
         }
 
-        #menuContent {
+        #menuContent-dice {
             display: block;
             top: 0;
             width: 180px;
@@ -218,7 +219,7 @@ p{
             z-index: 1000;
             transition: right 0.5s ease;
             cursor: pointer;
-            background-color: #3C2F2F;
+            background-color: #b3891f;
             text-align: center;
             /* Initialize with hidden state */
         }
@@ -483,7 +484,6 @@ p{
 }
 
 .dice-app {
-    margin: 30px 0px 0px;
     padding: 0;
     background-color: rgb(21, 36, 21);
     text-align: center;
@@ -543,9 +543,11 @@ p{
         color: #F4E9D3;
         padding-bottom: 20px;
         padding-top: 20px;
+        height: 100vh;
     }
     .dice-app h1{
-        font-size: 40px;
+        font-size: 50px;
+        margin-top: 100px;
     }
     .dice-container{
         display: flex;
@@ -557,7 +559,6 @@ p{
 
     #form-dice{
         font-size: 18px;
-        margin: 30px 0px 30px;
     }
     #form-dice select{
         font-size: 18px;
@@ -719,82 +720,9 @@ footer {
 
 /* CONTACT -----------------------------------------------------------------------------------------------*/
 
-@media (max-width: 550px) {
-    .contact-main{
-        margin-top: 60px;
-    }
-    .contact-info{
-        background-color: rgb(128, 128, 128);
-        color: white;
-        padding: 10px 30px 10px;
-        line-height: 22px;
-    }
-    .form-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0px 30px 25px;
-    }
-    
-    .form-field.button {
-        width: 30%;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 18px;
-    }
-    .form-field{
-        padding: 5px;
-        margin-bottom: 10px;;
-    }
-    .form-field.body{
-        margin-top: 5px;
-    }
-    
-    form {
-        line-height: 30px;
-        font-size: 16px;
-        margin: 15px;
-    }
-    /*.form-container {
-        display: flex;
-        justify-content: center;
-    }*/
-    
-    input[type="text"] {
-        margin-bottom: 15px;
-    }
-}
-
 /*About Page------------------------------------------------------------------------------------------------------------------------*/
 
-@media (max-width: 550px) {
 
-#about-page-container {
-    margin-top: 50px;
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-#about-page-container img {
-    width: 210px;
-    height: auto;
-    margin-top: 60px;
-    margin-bottom: 30px;
-}
-#about-page-container h1{
-    padding: 0;
-    margin-top: 30px;
-    padding: 0 20px 0px;
-}
-#about-page-container p{
-    margin: 0;
-    line-height: 22px;
-    padding: 0 40px 0px;
-}
-}
 
 
 

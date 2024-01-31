@@ -7,7 +7,7 @@ $(document).ready(function() {
         // Calculate top position based on scroll offset continuously
         var topPosition = Math.max(20 - offset, 0) + 'px';
 
-        $('#menuIcon, .nav-mobile h1').css({
+        $('#menuIcon, #nav-home').css({
             'color': colorBasedOnScroll,
             'top': topPosition
         });
@@ -26,15 +26,17 @@ $(document).ready(function() {
       
 
     // Shared click event for the menu icon and .nav-mobile h1
-    $('#menuIcon, .nav-mobile h1').click(function() {
-        $('#menuContent').toggleClass('hidden visible');
-
+    $('#menuIcon, #nav-home, #menuIcon-dice').click(function() {
+        $('#menuContent, #menuContent-dice').toggleClass('hidden visible');
+    
+        // Toggle 'menu-active' class
         if ($(this).hasClass('menu-active')) {
             $(this).removeClass('menu-active');
         } else {
             $(this).addClass('menu-active');
         }
     });
+
 
     $('#menuContent').mouseleave(function() {
         $(this).addClass('hidden').removeClass('visible');
