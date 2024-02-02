@@ -26,8 +26,8 @@ $(document).ready(function() {
       
 
     // Shared click event for the menu icon and .nav-mobile h1
-    $('#menuIcon, #nav-home, #menuIcon-dice').click(function() {
-        $('#menuContent, #menuContent-dice').toggleClass('hidden visible');
+    $('#menuIcon, #nav-home, #menuIcon-dice, #menuIcon-notes').click(function() {
+        $('#menuContent, #menuContent-dice, #menuContent-notes').toggleClass('hidden visible');
     
         // Toggle 'menu-active' class
         if ($(this).hasClass('menu-active')) {

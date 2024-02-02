@@ -437,6 +437,7 @@ p{
     width: 180px;
     letter-spacing: 0.6px;
     font-size: 25px;
+    color: #fff8ea;
 }
 
 #glossary-icons{
@@ -469,6 +470,9 @@ p{
     font-size: 24px;
     border-radius: 4px;
     text-align: left;
+}
+.box-resources a{
+    color: #F4E9D3;
 }
 #box-player-info {
     background-color: #3C2F2F;

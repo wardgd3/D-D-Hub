@@ -143,8 +143,7 @@ p{
             align-items: center;
             position: fixed;
             z-index: 2000;
-            background-color: rgba(60, 47, 47, 0);
-            transition: background-color 0.3s ease;
+            background-color: #3C2F2F;
             width: 100%;
             margin: 0;
             padding: 0;
@@ -157,8 +156,6 @@ p{
             width: 25px;
             height: auto;
             margin-left: 10px;
-            opacity: 1;
-            transition: opacity 0.3s ease;
         }
         .fixed-nav {
             display: none;
@@ -166,15 +163,15 @@ p{
         #desktop-menuContent{
             display: none;
         }
-        #nav-home{
-            color: #8B2721;
+        #nav-h1-notes{
+            color: #F4E9D3;
             margin: 0px 30px 0px;
             width: 300px;
             white-space: nowrap;
-            transition: color 0.3s ease, top 0.3s ease;
             position: relative;
             top: 20px;
             font-size: 18px;
+            top: 5px;
         }
         #icon-container{
             display: flex;
@@ -196,13 +193,13 @@ p{
             white-space: nowrap;
             direction: ltr;
             z-index: 5000;
-            transition: color 0.3s ease;
+            color: #F4E9D3;
           }
-          #menuIcon{
+          #menuIcon-notes{
             font-size: 32px;
             transition: font-size 0.3s ease, top 0.3s ease;
             position: relative; /* Needed for 'top' to work */
-            top: 20px;
+            top: 5px;
           }
         
         #menu-list {
@@ -212,7 +209,7 @@ p{
             z-index: 1000;
         }
 
-        #menuContent {
+        #menuContent-notes {
             display: block;
             top: 0;
             width: 180px;
