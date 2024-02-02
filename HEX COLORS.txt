@@ -1,0 +1,5 @@
+Deep, Muted Forest Green (#2C5F2D)  rgb(29, 51, 29)
+Rich Burgundy (#8B2721)
+Warm, Old Parchment Color (#F4E9D3)
+Subdued Gold (#DAA520)
+Dark Brown (#3C2F2F)
