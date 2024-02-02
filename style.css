@@ -359,6 +359,7 @@ p{
     display: flex;
     justify-content: center;
     margin-top: 140px;
+    margin-bottom: 10px;
 }
 
 .group-info p{
@@ -375,8 +376,17 @@ p{
     color: #8B2721;
 }
 /* main onjectives ---------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 550px) {
 .main-objectives{
-    margin: 40px 30px 0px;
+    margin-top: 50px;
+    padding: 10px 40px 30px;
+    background-color: rgb(29, 51, 29);
+    color: #F4E9D3;
+}
+.main-objectives p{
+    color: #F4E9D3;
+}
 }
 
 /* Featured Links ---------------------------------------------------------------------------------------------------------------------*/
@@ -450,7 +460,7 @@ p{
 .box-resources {
     height: 60px;
     width: 70%;
-    background-color: rgb(29, 51, 29);
+    background-color: #8d6b15;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -461,10 +471,10 @@ p{
     text-align: left;
 }
 #box-player-info {
-    background-color: #a37b16;
+    background-color: #3C2F2F;
 }
 #dice{
-    background-color: #3C2F2F;
+    background-color: rgb(29, 51, 29);
 }
 }
 

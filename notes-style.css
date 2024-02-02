@@ -1,0 +1,326 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding:0;
+}
+body {
+    width: 60%;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #F4E9D3;
+}
+@media (max-width: 550px) {
+  
+}
+a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+h1, h2, h3{
+    font-family: 'IM Fell English SC', serif;
+}
+
+p{
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    line-height: 27px;
+    color: #8B2721;
+}
+
+@media (max-width: 550px) {
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+/* NAV ------------------------------------------------------------------------------------------------------------*/
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    z-index: 1001;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.fixed-nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.fixed-nav li {
+    padding: 15px;
+}
+
+.fixed-nav a {
+    color: white;
+    text-decoration: none;
+}
+.nav-mobile {
+    display: none;
+}
+
+
+.material-icons {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    z-index: 5000;
+    color: white;
+    transition: color 0.3s ease;
+  }
+
+
+
+#desktop-menu-list {
+    margin-top: 100px;
+    text-decoration: none;
+    list-style: none;
+    z-index: 1000;
+    line-height: 40px;;
+    text-align: center;
+    font-size: 21px;
+    width: auto;
+    padding-left: 0;
+}
+#menu-list-mobile a.active {
+    color: orange;
+}
+
+.desktop-hidden {
+    right: -300px; /* Assuming you want to start it off-screen */
+    z-index: 1000;
+}
+
+.desktop-visible {
+    right: 0px;
+    z-index: 1000;
+}
+
+#desktop-menuContent {
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    transition: right 0.5s ease;
+    cursor: pointer;
+    background-color: gray;
+    /*box-shadow: -3px 0 5px -3px rgba(0, 0, 0, 0.5);*/
+}
+#menuContent{
+    display: none;
+}
+
+@media (max-width: 550px) {
+    
+    /* NAV */
+    
+        .nav-mobile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            z-index: 2000;
+            background-color: rgba(60, 47, 47, 0);
+            transition: background-color 0.3s ease;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            top: 0;
+            height: 50px;
+            padding: 3px 4px 3px;
+            font-family: 'Roboto Serif', serif;
+        }
+        .nav-mobile img {
+            width: 25px;
+            height: auto;
+            margin-left: 10px;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        .fixed-nav {
+            display: none;
+        }
+        #desktop-menuContent{
+            display: none;
+        }
+        #nav-home{
+            color: #8B2721;
+            margin: 0px 30px 0px;
+            width: 300px;
+            white-space: nowrap;
+            transition: color 0.3s ease, top 0.3s ease;
+            position: relative;
+            top: 20px;
+            font-size: 18px;
+        }
+        #icon-container{
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: flex-end;
+            margin-right: 30px;
+        }
+        .material-icons {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;  /* Preferred icon size */
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+            z-index: 5000;
+            transition: color 0.3s ease;
+          }
+          #menuIcon{
+            font-size: 32px;
+            transition: font-size 0.3s ease, top 0.3s ease;
+            position: relative; /* Needed for 'top' to work */
+            top: 20px;
+          }
+        
+        #menu-list {
+            list-style: none;
+            position: fixed;
+            background-color: aliceblue;
+            z-index: 1000;
+        }
+
+        #menuContent {
+            display: block;
+            top: 0;
+            width: 180px;
+            height: 100vh;
+            position: fixed;
+            z-index: 1000;
+            transition: right 0.5s ease;
+            cursor: pointer;
+            background-color: #3C2F2F;
+            text-align: center;
+            /* Initialize with hidden state */
+        }
+        #menuContent h4{
+            margin-top: 120px;
+            font-size: 22px;
+            color: #F4E9D3;
+            font-family: 'Roboto Serif', serif;
+            margin-bottom: 5;
+        }
+        .hidden {
+            right: -180px; /* Assuming you want to start it off-screen */
+            z-index: 1000;
+        }
+        
+        .visible {
+            right: 0px;
+            z-index: 1000;
+        }
+        #menu-list-mobile {
+            color: #F4E9D3;
+            text-decoration: none;
+            list-style: none;
+            z-index: 1000;
+            padding: 0px 15px 12px;
+            line-height: 36px;
+            text-align: center;
+            font-size: 21px;
+            line-height: 40px;
+            height: auto;
+            font-family: 'IM Fell English SC', serif;
+        }
+        #menu-list-mobile a{
+            color: #F4E9D3;
+        }
+        #menu-list-mobile-account-options{
+            text-decoration: none;
+            list-style: none;
+            z-index: 1000;
+            padding: 0px 15px 12px;
+            line-height: 36px;
+            text-align: center;
+            font-size: 21px;
+            line-height: 40px;
+            height: auto;
+            margin: 0;
+            color: black;
+        }
+        #menu-list-mobile-account-options a{
+            color: #F4E9D3;
+        }
+        #menu-list-mobile a.active {
+            color: orange;
+        }
+        
+    }    
+
+    /* Notes Form ------------------------------------------------------------------------------------------------*/
+
+    @media (max-width: 550px) {
+
+        #notes-form-container{
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            font-family: 'IM Fell English SC', serif;
+            font-size: 20px;
+            color: #3C2F2F;
+        }
+
+        .form-container-main{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            height: auto;
+        }
+
+        #title, #date, #notes-body{
+            margin: 8px 0px 8px;
+            padding: 5px;
+            border: 1.6px solid #3C2F2F;
+            border-radius: 4px;
+            background-color: #fff8f1;
+        }
+
+        #submit{
+            margin-top: 20px;
+            width: 30%;
+            padding: 8px 0 6px;
+            background-color: #3C2F2F;
+            color: #F4E9D3;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+        .submit-button-container{
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+    }

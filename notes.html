@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="notes-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Lora&family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,800&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Notes</title>
+</head>
+<body>
+    <header>
+        <nav class="fixed-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><i class="material-icons" id="desktop-menu-icon">menu</i></li>
+            </ul>
+            </nav>
+            <div id="desktop-menuContent" class="desktop-hidden">
+                <ul id="desktop-menu-list">
+                    <li><a href="playerinfo.html">Player Info</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="cities.html">NPC & Cities</a></li>
+                </ul>
+            </div>
+            <!--<ul id="menu-list" style="display: none;">
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul> -->
+        </nav>
+        <nav class="nav-mobile">
+            <!--<a href="#"><img src="images\mountain logo-02.png" alt="Logo"></a> -->
+            <h1 id="nav-home">D&D HUB</h1>
+            <div id="icon-container">
+            <i class="material-icons" id="menuIcon">menu</i>
+            </div>
+        </nav>
+        <div id="menuContent" class="hidden">
+            <h4>Player<br>Resources</h4>
+            <ul id="menu-list-mobile">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="npc.html">NPC List</a></li>
+                    <li><a href="cities.html">Cities</a></li>
+                    <li><a href="dice.html">Roll Dice</a></li>
+                <!--<li><a href="contact.html">Classes</a></li>
+                <li><a href="contact.html">Blog</a></li>-->
+            </ul>
+            <ul id="menu-list-mobile-account-options">
+                <li><a href="gallery.html">Login</a></li>
+                <li><a href="about.html">Account</a></li>
+            </ul>
+        </div>
+   </header>
+   <main>
+    <div class="form-container-main">
+    <form id="notes-form-container">
+        <label for="title">Title</label>
+        <input id="title" name="title" type="text" required>
+
+        <label for="date">Date</label>
+        <input id="date" name="date" type="date" required>
+
+        <label for="notes-body">Enter notes here</label>
+        <textarea id="notes-body" name="notes-body" minlength="50" maxlength="10000" rows="18" cols="20" required>Enter notes here</textarea>
+
+        <div class="submit-button-container">
+        <input type="submit" id="submit" value="Submit">
+        </div>
+    </form>
+    </div>
+   </main>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="script.js"></script> 
+</body>
+</html>
